@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<meta name="description" content="ShopZone BD — mobile phones, gadgets and mobile accessories. Order easily through WhatsApp.">
+<title>ShopZone BD | Smart Shopping</title>
+<style>
+:root{--navy:#111827;--navy2:#1f2937;--orange:#ff9900;--cream:#f5f6f8;--text:#182230;--muted:#667085;--green:#168447}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream)}
+a{color:inherit;text-decoration:none}.topline{background:#0b1220;color:#e5e7eb;text-align:center;padding:8px 12px;font-size:12px}
+header{background:var(--navy);color:white;padding:14px max(16px,calc((100% - 1180px)/2));display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:23px;font-weight:800;white-space:nowrap;letter-spacing:-.6px}.brand span{color:var(--orange)}
+.search{flex:1;display:flex;min-width:190px}.search input{width:100%;padding:12px;border:0;border-radius:6px 0 0 6px;font-size:14px;outline:none}.search button{border:0;background:var(--orange);padding:0 16px;border-radius:0 6px 6px 0;font-weight:bold;cursor:pointer}
+.header-note{font-size:12px;color:#e5e7eb}.nav{background:var(--navy2);color:white;padding:11px max(16px,calc((100% - 1180px)/2));display:flex;gap:20px;overflow:auto;white-space:nowrap;font-size:13px}.nav a:hover{color:var(--orange)}
+main{max-width:1180px;margin:auto;padding:20px 16px}.hero{background:linear-gradient(115deg,#111827,#24364d);color:white;border-radius:16px;padding:34px 28px;display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center;overflow:hidden}.eyebrow{color:#ffd28a;text-transform:uppercase;font-size:12px;font-weight:bold;letter-spacing:1.5px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:12px 0}.hero p{color:#d1d5db;line-height:1.6;max-width:520px}.cta{display:inline-block;background:var(--orange);color:#171717;font-weight:800;padding:12px 18px;border-radius:7px;margin-top:8px}.hero-art{font-size:88px;text-align:center;filter:drop-shadow(0 12px 18px #0005)}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.benefit{background:white;border-radius:10px;padding:15px;display:flex;gap:10px;align-items:center;font-size:13px;font-weight:bold}.benefit span{font-size:24px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 14px}.section-head h2{margin:0;font-size:24px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.category{background:white;border-radius:12px;padding:18px 8px;text-align:center;border:1px solid #e7e9ee}.category .icon{font-size:31px}.category strong{display:block;margin-top:8px;font-size:13px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cartbar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #e7e9ee;border-radius:12px;padding:14px 16px;margin:16px 0}.cartbar button{background:#168447;color:white;border:0;border-radius:7px;padding:11px 14px;font-weight:bold;cursor:pointer}.cartcount{font-weight:bold}.addcart{display:block;text-align:center;background:#fff0d2;color:#754500;border:1px solid #ffdf9f;font-weight:bold;font-size:13px;padding:9px;border-radius:7px;margin-top:8px;cursor:pointer}.card{background:white;border:1px solid #e7e9ee;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.product-image{height:145px;background:#edf0f4;display:flex;align-items:center;justify-content:center;font-size:55px}.product-info{padding:13px;display:flex;flex-direction:column;flex:1}.badge{font-size:10px;color:#9a5700;background:#fff0d2;padding:5px 7px;border-radius:20px;align-self:flex-start;font-weight:bold}.product-info h3{font-size:14px;margin:10px 0 6px;line-height:1.35}.desc{font-size:12px;color:var(--muted);line-height:1.4;min-height:32px}.price{font-size:19px;font-weight:800;margin:10px 0 12px}.order{display:block;text-align:center;background:var(--green);color:white;font-weight:bold;font-size:13px;padding:10px;border-radius:7px;margin-top:auto}.order:hover{background:#116b39}.notice{background:#fff7e8;border:1px solid #ffdf9f;color:#704400;border-radius:10px;padding:13px 15px;font-size:13px;line-height:1.5;margin-top:18px}
+footer{margin-top:35px;background:#111827;color:#e5e7eb;padding:28px 16px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner p{color:#aeb7c5;font-size:13px;line-height:1.6}.footer-inner h3{margin:0 0 8px}.small{font-size:11px;color:#aeb7c5}
+@media(max-width:720px){header{gap:12px}.header-note{display:none}.brand{font-size:21px}.hero{grid-template-columns:1fr;padding:25px 20px}.hero-art{display:none}.benefits{grid-template-columns:1fr}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image{height:115px}.product-info{padding:10px}.section-head h2{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="topline">Welcome to ShopZone BD · Mobile & Gadget Store</div>
+<header>
+  <a class="brand" href="#" aria-label="ShopZone BD home">ShopZone<span> BD</span></a>
+  <form class="search" onsubmit="searchProducts(event)">
+    <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+    <button type="submit">Search</button>
+  </form>
+  <div class="header-note">🟢 Easy WhatsApp ordering</div>
+</header>
+<nav class="nav">
+  <a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">All Products</a><a href="#offers">Special Offers</a><a href="#contact">Contact</a>
+</nav>
+<main>
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Mobile phones & gadget store</div>
+      <h1>Smart gadgets.<br>Smarter shopping.</h1>
+      <p>Discover useful mobile accessories, charging essentials, audio gadgets and everyday tech. Browse our demo collection and order directly through WhatsApp.</p>
+      <a class="cta" href="#products">Explore Products&nbsp; →</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">🛍️ 📦</div>
+  </section>
+  <div class="benefits">
+    <div class="benefit"><span>🟢</span><div>Simple WhatsApp ordering<br><small style="color:#667085;font-weight:normal">Talk to us directly</small></div></div>
+    <div class="benefit"><span>🔎</span><div>Easy product search<br><small style="color:#667085;font-weight:normal">Find what you need</small></div></div>
+    <div class="benefit"><span>💬</span><div>Friendly support<br><small style="color:#667085;font-weight:normal">Ask before you order</small></div></div>
+  </div>
+  <section id="categories">
+    <div class="section-head"><div><h2>Shop by category</h2><p>Mobile accessories and useful gadgets in one place.</p></div></div>
+    <div class="categories">
+      <a class="category" href="#products" onclick="filterCategory('Mobile Accessories')"><div class="icon">📱</div><strong>Mobile Accessories</strong></a>
+      <a class="category" href="#products" onclick="filterCategory('Audio Gadgets')"><div class="icon">🎧</div><strong>Audio Gadgets</strong></a>
+      <a class="category" href="#products" onclick="filterCategory('Charging')"><div class="icon">🔌</div><strong>Charging</strong></a>
+      <a class="category" href="#products" onclick="filterCategory('Smart Gadgets')"><div class="icon">⌚</div><strong>Smart Gadgets</strong></a>
+      <a class="category" href="#products" onclick="filterCategory('Electronics')"><div class="icon">💡</div><strong>Electronics</strong></a>
+    </div>
+  </section>
+  <section id="offers">
+    <div class="cartbar"><div><div class="cartcount">🛒 Shopping cart: <span id="cartCount">0</span> item(s)</div><small id="cartTotal" style="color:#667085">Total: ৳0</small></div><button onclick="checkoutCart()">Checkout on WhatsApp →</button></div>
+    <div class="section-head"><div><h2>Mobile & Gadget Picks</h2><p>Sample products and prices — update these before taking real orders.</p></div></div>
+    <div class="products" id="productGrid">
+      <article class="card" data-category="Audio Gadgets" data-name="Wireless Earbuds">
+        <div class="product-image">🎧</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Wireless Earbuds</h3><div class="desc">Compact wireless audio for everyday use.</div><div class="price">৳ 850</div><a class="order" href="#" onclick="orderProduct(event,'Wireless Earbuds','850')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Wireless Earbuds',850)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Charging" data-name="Fast Charging Adapter">
+        <div class="product-image">🔌</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Fast Charging Adapter</h3><div class="desc">A compact adapter for compatible devices.</div><div class="price">৳ 550</div><a class="order" href="#" onclick="orderProduct(event,'Fast Charging Adapter','550')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Fast Charging Adapter',550)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Charging" data-name="USB Type-C Cable">
+        <div class="product-image">🔋</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>USB Type-C Cable</h3><div class="desc">Everyday charging and data cable.</div><div class="price">৳ 180</div><a class="order" href="#" onclick="orderProduct(event,'USB Type-C Cable','180')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('USB Type-C Cable',180)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Mobile Accessories" data-name="Phone Holder Stand">
+        <div class="product-image">📱</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Phone Holder Stand</h3><div class="desc">Convenient stand for desk or video calls.</div><div class="price">৳ 250</div><a class="order" href="#" onclick="orderProduct(event,'Phone Holder Stand','250')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Phone Holder Stand',250)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Mobile Accessories" data-name="Protective Phone Case">
+        <div class="product-image">🛡️</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Protective Phone Case</h3><div class="desc">A protective case; choose your phone model.</div><div class="price">৳ 220</div><a class="order" href="#" onclick="orderProduct(event,'Protective Phone Case','220')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Protective Phone Case',220)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Smart Gadgets" data-name="Smart Watch">
+        <div class="product-image">⌚</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Smart Watch</h3><div class="desc">Smart wearable for everyday convenience.</div><div class="price">৳ 1,250</div><a class="order" href="#" onclick="orderProduct(event,'Smart Watch','1250')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Smart Watch',1250)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Electronics" data-name="Mini Rechargeable Fan">
+        <div class="product-image">🪭</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Mini Rechargeable Fan</h3><div class="desc">Portable mini fan for home or travel.</div><div class="price">৳ 650</div><a class="order" href="#" onclick="orderProduct(event,'Mini Rechargeable Fan','650')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Mini Rechargeable Fan',650)">＋ Add to cart</button></div>
+      </article>
+      <article class="card" data-category="Audio Gadgets" data-name="Bluetooth Speaker">
+        <div class="product-image">🔊</div><div class="product-info"><span class="badge">DEMO PRODUCT</span><h3>Bluetooth Speaker</h3><div class="desc">Portable speaker for music on the go.</div><div class="price">৳ 950</div><a class="order" href="#" onclick="orderProduct(event,'Bluetooth Speaker','950')">Order on WhatsApp</a><button class="addcart" onclick="addToCart('Bluetooth Speaker',950)">＋ Add to cart</button></div>
+      </article>
+    </div>
+    <div class="notice"><strong>দ্রষ্টব্য:</strong> এখানে দেখানো পণ্য ও দাম নমুনা মাত্র, বাস্তব অফার নয়। বিক্রির আগে নিজের পণ্য, সঠিক দাম ও WhatsApp নম্বর বসাতে হবে।</div>
+  </section>
+</main>
+<footer id="contact">
+  <div class="footer-inner">
+    <div><h3>ShopZone <span style="color:#ff9900">BD</span></h3><p>Your mobile and gadget shopping destination.<br>Browse, ask questions and order through WhatsApp.</p></div>
+    <div><h3>Contact</h3><p>WhatsApp orders and product questions<br>Replace this text with your business contact details.</p></div>
+    <div><h3>Helpful links</h3><p><a href="#products">All Products</a><br><a href="#categories">Categories</a><br><a href="#home">Back to top ↑</a></p></div>
+  </div>
+  <div class="footer-inner small" style="margin-top:18px;border-top:1px solid #374151;padding-top:14px">© <span id="year"></span> ShopZone BD. All rights reserved.</div>
+</footer>
+<script>
+/* IMPORTANT: Replace the digits below with your WhatsApp number, including country code.
+   Bangladesh example format: 8801XXXXXXXXX (no +, spaces or hyphens). */
+const WHATSAPP_NUMBER = "8801XXXXXXXXX";
+const cart = [];
+function addToCart(name,price){
+  const existing=cart.find(item=>item.name===name);
+  if(existing) existing.qty++; else cart.push({name,price,qty:1});
+  renderCart();
+}
+function renderCart(){
+  const count=cart.reduce((sum,item)=>sum+item.qty,0);
+  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+  document.getElementById('cartCount').textContent=count;
+  document.getElementById('cartTotal').textContent='Total: ৳'+total.toLocaleString('en-BD');
+}
+function checkoutCart(){
+  if(!cart.length){alert('Your cart is empty. Add a product first.');return;}
+  if(WHATSAPP_NUMBER.includes('X')){alert('Please add your WhatsApp number in the website code first. Use format 8801XXXXXXXXX for Bangladesh.');return;}
+  const lines=cart.map(item=>`${item.name} × ${item.qty} — ৳${item.price*item.qty}`).join('\\n');
+  const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+  const message=`Hello ShopZone BD! I want to order:\\n${lines}\\nTotal: ৳${total}\\nPlease confirm availability and delivery details.`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,'_blank');
+}
+function orderProduct(event,name,price){
+  event.preventDefault();
+  if(WHATSAPP_NUMBER.includes("X")){
+    alert("Please add your WhatsApp number in the website code first. Use format 8801XXXXXXXXX for Bangladesh.");
+    return;
+  }
+  const message = `Hello ShopZone BD! I want to order:\nProduct: ${name}\nPrice: ৳${price}\nPlease confirm availability and delivery details.`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,"_blank");
+}
+function searchProducts(event){
+  event.preventDefault();
+  const query=document.getElementById('searchInput').value.trim().toLowerCase();
+  document.querySelectorAll('.card').forEach(card=>{
+    card.style.display=(!query || (card.dataset.name+" "+card.dataset.category).toLowerCase().includes(query))?'flex':'none';
+  });
+}
+function filterCategory(category){
+  document.querySelectorAll('.card').forEach(card=>card.style.display=(card.dataset.category===category)?'flex':'none');
+  document.getElementById('searchInput').value='';
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
